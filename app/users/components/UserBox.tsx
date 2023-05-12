@@ -32,7 +32,7 @@ const UserBox: React.FC<UserBoxProps> = ({ data }) => {
         className="relative w-full flex items-center space-x-3 p-3 bg-white rounded-md transition cursor-pointer hover:bg-neutral-100"
     >
         <Avatar user={data} />
-        <p className="flex-1 focus:outline-none text-sm tracking-tight font-medium text-neutral-900">{data.name}</p>
+        <p className="flex-1 focus:outline-none text-sm tracking-tight font-medium text-neutral-900 capitalize">{data.name}</p>
     </div>
   )
 }

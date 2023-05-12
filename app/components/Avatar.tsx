@@ -15,6 +15,9 @@ const Avatar: React.FC<AvatarProps> = ({ user }) => {
                 alt="Avatar"
                 src={user?.image! ?? '/images/empty-avatar.jpg'}
                 fill
+                sizes="(max-width:768px) 24px, (min-width:768px) 24px"
+                blurDataURL={user?.image! ?? '/images/empty-avatar.jpg'}
+                placeholder="blur"
             />
         </div>
         <span className="absolute block rounded-full bg-green-600 ring-2 ring-white top-0 right-0 h-1 w-1 md:h-2 md:w-2"></span>

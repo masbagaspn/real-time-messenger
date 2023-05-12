@@ -52,7 +52,7 @@ export async function POST(
                     },
                     {
                         userIds: {
-                            equals: [currentUser.id, userId]
+                            equals: [userId, currentUser.id]
                         }
                     }
                 ]
