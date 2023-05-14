@@ -39,7 +39,7 @@ export async function POST(
                 }
             })
 
-            return new (NextResponse as any).json(newConversation)
+            return NextResponse.json(newConversation)
         }
 
         const existingConversations = await prisma.conversation.findMany({
