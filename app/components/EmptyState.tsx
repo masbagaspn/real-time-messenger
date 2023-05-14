@@ -11,6 +11,7 @@ const EmptyState = () => {
                 width={480}
                 height={480}
                 quality={100}
+                priority
                 className='w-auto h-2/3 object-cover object-center'
             />
             <div className='w-full h-fit flex flex-col items-center gap-4'>

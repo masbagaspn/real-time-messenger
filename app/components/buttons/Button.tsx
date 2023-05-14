@@ -7,9 +7,9 @@ interface ButtonProps {
     fullWidth?: boolean,
     children?: React.ReactNode,
     onClick?: () => void,
-    secondary: boolean,
-    danger: boolean,
-    disabled: boolean
+    secondary?: boolean,
+    danger?: boolean,
+    disabled?: boolean
 }
 
 const Button: React.FC<ButtonProps> = ({
