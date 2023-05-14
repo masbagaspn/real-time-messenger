@@ -1,7 +1,7 @@
 'use client'
 
 import Avatar from "@/app/components/Avatar"
-import { fullMessageType } from "@/app/types"
+import { FullMessageType } from "@/app/types"
 import clsx from "clsx"
 import { format } from "date-fns"
 import { useSession } from "next-auth/react"
@@ -10,7 +10,7 @@ import { useState } from "react"
 import ImageModal from "./ImageModal"
 
 interface MessageBoxProps {
-    data: fullMessageType,
+    data: FullMessageType,
     isLast: boolean
 }
 

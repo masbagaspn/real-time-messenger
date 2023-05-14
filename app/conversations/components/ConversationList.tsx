@@ -1,7 +1,7 @@
 'use client'
 
 import useConversation from "@/app/hooks/useConverstation"
-import { fullConversationType } from "@/app/types"
+import { FullConversationType } from "@/app/types"
 import clsx from "clsx"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
@@ -11,7 +11,7 @@ import GroupChatModal from "./GroupChatModal"
 import { User } from "@prisma/client"
 
 interface ConversationListProps {
-    initialItems?: fullConversationType[],
+    initialItems?: FullConversationType[],
     users: User[]
 }
 

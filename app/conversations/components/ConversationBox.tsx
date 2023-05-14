@@ -2,7 +2,7 @@
 
 import Avatar from "@/app/components/Avatar"
 import useOtherUser from "@/app/hooks/useOtherUser"
-import { fullConversationType } from "@/app/types"
+import { FullConversationType } from "@/app/types"
 import clsx from "clsx"
 import { useSession } from "next-auth/react"
 import { useRouter } from "next/navigation"
@@ -11,7 +11,7 @@ import { format } from "date-fns"
 import AvatarGroup from "@/app/components/AvatarGroup"
 
 interface ConversationBoxProps {
-    data: fullConversationType,
+    data: FullConversationType,
     selected: boolean
 }
 
