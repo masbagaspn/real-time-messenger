@@ -3,15 +3,17 @@ import AuthForm from "./components/AuthForm";
 
 export default function Home() {
   return (
-    <div className="flex h-full p-10 gap-10 bg-neutral-50">
+    <div className="flex h-full px-10 py-6 sm:p-10 gap-10 bg-neutral-50">
       <div className="sm:w-full lg:w-1/2 flex flex-col">
-        <h1 className="tracking-tighter font-bold text-sky-800 text-lg">SWIVT.</h1>
+        <h1 className="tracking-tighter font-bold text-sky-800 text-lg">
+          SWIVT.
+        </h1>
         <AuthForm />
       </div>
-      <div className="relative sm:hidden lg:block lg:w-1/2 rounded-tl-3xl rounded-br-3xl overflow-hidden">
+      <div className="relative hidden lg:block lg:w-1/2 rounded-tl-3xl rounded-br-3xl overflow-hidden">
         <Image
-          src='https://images.unsplash.com/photo-1569144157581-984dea473e3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=100'
-          alt='hero-image'
+          src="https://images.unsplash.com/photo-1569144157581-984dea473e3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=100"
+          alt="hero-image"
           width={1000}
           height={1000}
           placeholder="blur"
@@ -26,5 +28,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }
